@@ -3,12 +3,15 @@ const std = @import("std");
 // Adding some comments
 // mooore.
 // Need more comments!
+// and another one
 pub fn main() !void {
     // Prints to stderr, ignoring potential errors.
     print("hello");
+    print("hello again");
 }
 
 /// A function to print
+/// This is a new comment
 pub fn print(comptime text: []const u8) void {
     std.debug.print(text, .{});
 }
