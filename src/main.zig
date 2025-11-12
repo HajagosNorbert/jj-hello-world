@@ -7,7 +7,7 @@ const steve_tutorial = @import("steve_tutorial");
 pub fn main() !void {
     // Prints to stderr, ignoring potential errors.
     std.debug.print("All your {s} are belong to us.\n", .{"codebase"});
-    std.debug.print("Goodbye!", .{});
+    std.debug.print("Just Hello!", .{});
     try steve_tutorial.bufferedPrint();
 }
 
