@@ -16,6 +16,10 @@ pub fn print(comptime text: []const u8) void {
     std.debug.print(text, .{});
 }
 
+pub fn print2(comptime text: []const u8) void {
+    std.debug.print(text, .{});
+}
+
 test "simple test" {
     const gpa = std.testing.allocator;
     var list: std.ArrayList(i32) = .empty;
