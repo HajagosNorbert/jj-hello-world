@@ -18,6 +18,7 @@ test "simple test" {
     var list: std.ArrayList(i32) = .empty;
     defer list.deinit(gpa); // Try commenting this out and see if zig detects the memory leak!
     try list.append(gpa, 42);
+    //another comment
     try std.testing.expectEqual(@as(i32, 42), list.pop());
 }
 
