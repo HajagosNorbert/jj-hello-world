@@ -1,5 +1,4 @@
 const std = @import("std");
-const steve_tutorial = @import("steve_tutorial");
 
 // Adding some comments
 // mooore.
@@ -7,17 +6,13 @@ const steve_tutorial = @import("steve_tutorial");
 pub fn main() !void {
     // Prints to stderr, ignoring potential errors.
     std.debug.print("All your {s} are belong to us.\n", .{"codebase"});
-    hello();
-    goodby();
-    try steve_tutorial.bufferedPrint();
+    print("hello");
+    print("goodbye");
 }
 
-pub fn goodby() !void {
-    std.debug.print("goodbye!", .{});
-}
-
-pub fn hello() !void {
-    std.debug.print("Hello!", .{});
+/// A function to print
+pub fn print(comptime text: []const u8) void {
+    std.debug.print(text, .{});
 }
 
 test "simple test" {
