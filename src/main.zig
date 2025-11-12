@@ -9,6 +9,7 @@ pub fn main() !void {
 }
 
 /// A function to print
+/// This is a new comment
 pub fn print(comptime text: []const u8) void {
     std.debug.print(text, .{});
 }
